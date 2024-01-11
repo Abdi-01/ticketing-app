@@ -63,6 +63,9 @@ export default class App {
     this.app.use("/regis", (req: Request, res: Response) => {
       return res.status(200).send("REGISTER PAGE");
     })
+    this.app.use("/login", (req: Request, res: Response) => {
+      return res.status(200).send("LOGIN PAGE");
+    })
     /// BERTIE CLOSED TASK ///
     /// ABDI OPEN TASK ///
     this.app.use("/discovery", (req: Request, res: Response) => {
