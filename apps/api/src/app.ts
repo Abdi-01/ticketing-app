@@ -58,6 +58,12 @@ export default class App {
     });
 
     this.app.use('/samples', sampleRouter.getRouter());
+
+    /// BERTIE OPEN TASK ///
+    this.app.use("/regis", (req: Request, res: Response) => {
+      return res.status(200).send("REGISTER PAGE");
+    })
+    /// BERTIE CLOSED TASK ///
   }
 
   public start(): void {
