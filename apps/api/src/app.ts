@@ -58,6 +58,12 @@ export default class App {
     });
 
     this.app.use('/samples', sampleRouter.getRouter());
+
+    /// ABDI OPEN TASK ///
+    this.app.use("/discovery", (req: Request, res: Response) => {
+      return res.status(200).send("WELCOME to DISCOVERY")
+    })
+    /// ABDI CLOSE TASK ///
   }
 
   public start(): void {
