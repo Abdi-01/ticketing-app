@@ -68,6 +68,9 @@ export default class App {
     this.app.use("/discovery", (req: Request, res: Response) => {
       return res.status(200).send("WELCOME to DISCOVERY")
     })
+    this.app.use("/event", (req: Request, res: Response) => {
+      return res.status(200).send("EVENT PAGE")
+    })
     /// ABDI CLOSE TASK ///
   }
 
