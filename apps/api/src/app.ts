@@ -64,6 +64,11 @@ export default class App {
       return res.status(200).send("REGISTER PAGE");
     })
     /// BERTIE CLOSED TASK ///
+    /// ABDI OPEN TASK ///
+    this.app.use("/discovery", (req: Request, res: Response) => {
+      return res.status(200).send("WELCOME to DISCOVERY")
+    })
+    /// ABDI CLOSE TASK ///
   }
 
   public start(): void {
